@@ -5,10 +5,16 @@ public class FPSDisplay : MonoBehaviour
 {
 	float deltaTime = 0.0f;
 	
+    void Start()
+    {
+        Debug.Log("YOLO");
+    }
+
 	void Update()
 	{
-		deltaTime += (Time.deltaTime - deltaTime) * 0.1f;
-	}
+        //
+        deltaTime += (Time.deltaTime - deltaTime) * 0.1f;
+    }
 	
 	void OnGUI()
 	{
